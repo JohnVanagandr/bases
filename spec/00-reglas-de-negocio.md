@@ -12,4 +12,6 @@ Tercera regla: Se exige un único punto de impresión. Queda estrictamente prohi
 
 Cuarta regla: Aislamiento de utilidades. Las operaciones matemáticas y las validaciones de datos no pueden estar mezcladas con la lógica de negocio. Deben existir como herramientas independientes y genéricas que cualquier parte del sistema pueda invocar.
 
-Quinta regla (Topología Estricta): El árbol de directorios se compone de tres carpetas base: un núcleo para las configuraciones de entrada, un directorio compartido para el motor de presentación y las utilidades genéricas (matemáticas y validadores), y un directorio de funcionalidades para la lógica salarial. El orquestador principal reside en la raíz.
+Quinta regla (Topología Estricta): El árbol de directorios se compone de tres carpetas base: un núcleo para las configuraciones de entrada, un directorio compartido para el motor de presentación y las utilidades genéricas, y un directorio de funcionalidades para la lógica salarial. El orquestador principal reside en la raíz.
+
+Sexta regla (Ecosistema de Módulos Moderno): El proyecto debe configurarse de forma global para operar nativamente con el sistema de módulos de ECMAScript. Se debe instruir al entorno de ejecución para que trate todos los archivos como módulos modernos. Para la comunicación entre archivos, es obligatorio utilizar exclusivamente las declaraciones de importación y exportación modernas. Queda estrictamente prohibido el uso del sistema antiguo de módulos de CommonJS en todo el proyecto.
